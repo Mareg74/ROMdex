@@ -11,7 +11,9 @@ DerivedData/
 .swiftpm/
 
 # Build artifacts
+build/
 *.app
+*.dmg
 *.dSYM/
 
 # IDE / local
