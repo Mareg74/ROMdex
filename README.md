@@ -59,8 +59,8 @@ Indexeur de ROMs pour macOS — recherche multi-sites, filtre par plateforme, ap
 ## Installation (release)
 
 1. Téléchargez **`ROMdex.dmg`** depuis les [Releases GitHub](https://github.com/Mareg74/ROMdex/releases).
-2. Ouvrez l’image disque : **ROMdex.app** s’affiche directement.
-3. Glissez **ROMdex.app** vers le dossier **Applications**.
+2. Ouvrez l’image disque : **ROMdex.app** et le raccourci **Applications** s’affichent.
+3. Glissez **ROMdex.app** sur **Applications**.
 4. Au premier lancement (app non signée) : clic droit sur ROMdex → **Ouvrir**, puis confirmer.
 5. Optionnel : téléchargez le **catalogue initial** (ZIP) sur la même release, puis **Import catalogue** dans l’app.
 
