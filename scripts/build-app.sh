@@ -68,3 +68,5 @@ cat > "$APP_PATH/Contents/Info.plist" <<PLIST
 PLIST
 
 echo "→ $APP_PATH prêt ($(du -sh "$APP_PATH" | cut -f1))"
+
+echo "→ $APP_PATH prêt ($(du -sh "$APP_PATH" | cut -f1))"

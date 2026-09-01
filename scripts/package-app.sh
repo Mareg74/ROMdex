@@ -11,14 +11,33 @@ APP_PATH="$BUILD_DIR/ROMdex.app"
 DMG_STAGING="$BUILD_DIR/dmg-staging"
 DMG_RW="$BUILD_DIR/ROMdex-temp.dmg"
 DMG_PATH="$BUILD_DIR/ROMdex.dmg"
+ICON_PATH="$ROOT/Sources/ROMdex/Resources/AppIcon.icns"
+
+source "$ROOT/scripts/create-installer-app.sh"
 
 "$ROOT/scripts/build-app.sh" "$VERSION"
 
-echo "→ Préparation de l’image disque (ROMdex.app + raccourci Applications)…"
+echo "→ Préparation de l’image disque…"
 rm -rf "$DMG_STAGING" "$DMG_RW" "$DMG_PATH"
 mkdir -p "$DMG_STAGING"
 ditto "$APP_PATH" "$DMG_STAGING/ROMdex.app"
+create_installer_app "$DMG_STAGING" "$APP_PATH" "$ICON_PATH"
 ln -s /Applications "$DMG_STAGING/Applications"
+
+cat > "$DMG_STAGING/LISEZ-MOI.txt" <<'TXT'
+ROMdex — installation
+
+Méthode recommandée :
+  1. Double-cliquez sur « Install ROMdex »
+  2. Si macOS bloque l’ouverture : clic droit → Ouvrir → Ouvrir
+  3. L’application est copiée dans Applications et lancée automatiquement
+
+Méthode manuelle :
+  Glissez ROMdex.app sur le dossier Applications, puis dans le Terminal :
+  xattr -cr /Applications/ROMdex.app
+
+Au premier lancement, macOS peut demander une confirmation (application non signée).
+TXT
 
 SIZE_MB=$(( $(du -sm "$DMG_STAGING" | cut -f1) + 20 ))
 hdiutil create -volname "ROMdex" -srcfolder "$DMG_STAGING" -ov -format UDRW -size "${SIZE_MB}m" "$DMG_RW" >/dev/null
@@ -44,12 +63,18 @@ tell application "Finder"
     set current view of container window to icon view
     set toolbar visible of container window to false
     set statusbar visible of container window to false
-    set the bounds of container window to {120, 120, 620, 380}
+    set the bounds of container window to {100, 100, 700, 400}
     set viewOptions to the icon view options of container window
     set arrangement of viewOptions to not arranged
-    set icon size of viewOptions to 128
+    set icon size of viewOptions to 96
     try
-      set position of item "ROMdex.app" of container window to {130, 140}
+      set position of item "Install ROMdex.app" of container window to {120, 130}
+    end try
+    try
+      set position of item "ROMdex.app" of container window to {300, 130}
+    end try
+    try
+      set position of item "Applications" of container window to {480, 130}
     end try
     close
     open
