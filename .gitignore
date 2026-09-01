@@ -1,0 +1,21 @@
+# Xcode
+.build/
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.swiftpm/
+
+# Build artifacts
+*.app
+*.dSYM/
+
+# IDE / local
+*.code-workspace
+
+# Catalogue seed volumineux : distribué via GitHub Release, pas dans l’historique git
+ROMdex-catalog-*.zip

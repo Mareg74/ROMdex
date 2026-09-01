@@ -1,0 +1,70 @@
+ROMdex — Licence d'utilisation du code source / Source Code License
+
+Copyright (c) 2026 Mareg74. Tous droits réservés. / All rights reserved.
+
+================================================================================
+FRANÇAIS
+================================================================================
+
+Vous pouvez consulter, utiliser, modifier et publier un **fork personnel**
+de ce logiciel pour un usage **strictement non commercial** (usage privé,
+recherche, apprentissage, contribution personnelle).
+
+**Usage commercial** (vente, service payant, inclusion dans un produit
+commercial, SaaS, redistribution payante, etc.) : **interdit sans
+autorisation écrite préalable** du titulaire des droits (Mareg74).
+
+### Vous pouvez
+
+- Utiliser ROMdex gratuitement à titre personnel ;
+- Créer un fork sur GitHub ou ailleurs pour votre usage privé non commercial ;
+- Proposer des améliorations via pull request (sous réserve d'acceptation
+  par le mainteneur).
+
+### Vous ne pouvez pas, sans autorisation écrite préalable
+
+- Utiliser ROMdex ou un dérivé à des fins commerciales ;
+- Revendre, louer ou sublicencier le logiciel ou un dérivé ;
+- Retirer cet avis de licence des copies substantielles du code.
+
+### Absence de garantie
+
+Ce logiciel est fourni « en l'état », sans garantie d'aucune sorte, expresse
+ou implicite. Mareg74 n'est pas responsable des dommages directs ou indirects
+liés à son utilisation.
+
+Pour toute demande de licence commerciale : ouvrir une issue sur le dépôt
+GitHub ou contacter le mainteneur.
+
+================================================================================
+ENGLISH
+================================================================================
+
+You may view, use, modify, and publish a **personal fork** of this software
+for **strictly non-commercial** purposes (private use, research, learning,
+personal contribution).
+
+**Commercial use** (sale, paid service, inclusion in a commercial product,
+SaaS, paid redistribution, etc.) is **prohibited without prior written
+permission** from the copyright holder (Mareg74).
+
+### You may
+
+- Use ROMdex free of charge for personal use ;
+- Create a fork on GitHub or elsewhere for private, non-commercial use ;
+- Submit improvements via pull request (subject to maintainer acceptance).
+
+### You may not, without prior written permission
+
+- Use ROMdex or a derivative for commercial purposes ;
+- Sell, rent, or sublicense the software or a derivative ;
+- Remove this license notice from substantial copies of the code.
+
+### Disclaimer
+
+This software is provided "as is", without warranty of any kind, express or
+implied. Mareg74 is not liable for any direct or indirect damages arising
+from its use.
+
+For commercial licensing inquiries: open an issue on the GitHub repository
+or contact the maintainer.
